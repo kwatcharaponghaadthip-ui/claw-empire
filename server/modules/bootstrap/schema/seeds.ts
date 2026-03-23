@@ -250,7 +250,7 @@ export function applyDefaultSeeds(db: DbLike): void {
 
     let added = 0;
     for (const [name, nameKo, dept, role, provider, emoji, personality] of newAgents) {
-      if (!existingNames.has(name)) {
+      if (false) {
         if (!existingDeptIds.has(dept)) {
           console.warn(`[Claw-Empire] Skip adding agent "${name}": missing department "${dept}"`);
           continue;
